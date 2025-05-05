@@ -1,0 +1,246 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body {
+  font-family: 'Yusei Magic', sans-serif;
+  background-color: #fdfad1;
+  color: #333;
+  margin: 0;
+  padding: 0 15%;
+  line-height: 2;
+}
+
+.ourhouse-banner .banner {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border: 5px solid #00ff00;
+  background-color: #ffffcc;
+  box-sizing: border-box;
+}
+
+.banner-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8);
+}
+
+.banner-text {
+  position: relative;
+  z-index: 2;
+  color: #000;
+  text-align: center;
+  padding-top: 30px;
+  text-shadow: 2px 2px #ffffff;
+}
+
+.subtitle {
+  font-size: 30px;
+  color: blue;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 4px;
+}
+
+.main-title {
+  font-size: 48px;
+  color: cyan;
+  font-weight: bold;
+  margin: 10px 0;
+  letter-spacing: 6px;
+  text-shadow: 2px 2px #000000;
+  display: inline-block;
+}
+
+.globe {
+  font-size: 40px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  background-color: #f8e89e;
+  margin: 0;
+}
+
+nav a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+main {
+  padding: 3rem 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 4px dashed #f08080;
+  padding-bottom: 0.5rem;
+  color: #e00;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  background: #eee;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+.section-box {
+  background: #b6f97c;
+  padding: 2rem;
+  border-radius: 25px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 3rem;
+  border: 3px solid #111;
+}
+
+.highlight-strong {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #d40000;
+  text-shadow: 1px 1px 2px white;
+}
+
+.highlight-keyword {
+  color: #5f00af;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.highlight-rhythm {
+  color: #008844;
+  font-weight: bold;
+}
+
+.highlight-genre {
+  background-color: #ffff66;
+  padding: 0.1rem 0.5rem;
+  border: 2px dashed #333;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.live-box {
+  background: #ccff99;
+  border: 5px solid #00cc00;
+  border-radius: 30px;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+}
+
+.live-header .live-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  background: #fffb00;
+  padding: 1rem 2rem;
+  display: inline-block;
+  border-radius: 15px;
+  color: #008000;
+  text-shadow: 1px 1px 2px #ffffff;
+  margin-bottom: 2rem;
+}
+
+.live-content .live-highlight {
+  font-size: 2rem;
+  margin: 2rem 0;
+  font-weight: bold;
+  color: #000;
+}
+
+.live-content .live-date {
+  font-size: 2.2rem;
+  color: #cc0000;
+  font-weight: bold;
+}
+
+.underlined {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #ff33cc;
+}
+
+.highlight-yellow {
+  background-color: #ffff66;
+  padding: 0.2rem 0.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.highlight-pink {
+  color: #d400aa;
+  background: #fff0f5;
+  padding: 0.2rem 0.5rem;
+  border-radius: 8px;
+}
+
+.highlight-blue {
+  color: #0033cc;
+  font-weight: bold;
+  background: #ccf0ff;
+  padding: 0.2rem 0.6rem;
+  border-radius: 10px;
+}
+
+.live-note {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.outline-yellow {
+  color: #ffff33;
+  font-size: 3.2rem;
+  font-weight: 900;
+  font-family: 'Anton', sans-serif;
+  -webkit-text-stroke: 0.8px black;
+  text-shadow:
+    1px 1px 0px black,
+    -1px -1px 0px black,
+    1px -1px 0px black,
+    -1px 1px 0px black;
+}
+
+.outline-pink {
+  color: #ff66cc;
+  font-size: 3.2rem;
+  font-weight: 900;
+  font-family: 'Anton', sans-serif;
+  -webkit-text-stroke: 0.8px black;
+  text-shadow:
+    1px 1px 0px black,
+    -1px -1px 0px black,
+    1px -1px 0px black,
+    -1px 1px 0px black;
+}
+
+.outline-red {
+  color: #ff3333;
+  font-size: 3.2rem;
+  font-weight: 900;
+  font-family: 'Anton', sans-serif;
+  -webkit-text-stroke: 0.8px black;
+  text-shadow:
+    1px 1px 0px black,
+    -1px -1px 0px black,
+    1px -1px 0px black,
+    -1px 1px 0px black;
+}
