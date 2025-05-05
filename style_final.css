@@ -453,3 +453,88 @@ footer {
   color: #5f00af; /* 色も変えたければここで */
   font-weight: bold;
 }
+
+
+
+
+
+@media (max-width: 768px) {
+  body {
+    padding: 0 5%;
+    font-size: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .main-title {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .globe {
+    font-size: 1.5rem;
+  }
+
+  .outline-yellow,
+  .outline-red,
+  .outline-pink {
+    font-size: 1.8rem;
+    -webkit-text-stroke: 0.5px black;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  #profile p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+
+  .highlight-strong {
+    font-size: 1.5rem;
+  }
+
+  .highlight-keyword {
+    font-size: 1.2rem;
+  }
+
+  .big-keyword {
+    font-size: 2rem;
+  }
+
+  .section-box,
+  .live-box,
+  .youtube-box,
+  #discography,
+  #sns {
+    margin-bottom: 5rem;
+    padding: 1rem;
+  }
+
+  .video-caption {
+    font-size: 0.8rem;
+  }
+
+  .styled-list {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  #discography {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+
+  #discography strong {
+    font-size: 1.5rem;
+  }
+}
