@@ -1,13 +1,14 @@
 
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CHO CO PA CO CHO CO QUIN QUIN</title>
-  <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style_final.css" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHO CO PA CO CHO CO QUIN QUIN</title>
+    <link rel="icon" type="image/jpeg" href="favicon.jpg">  <!-- ← 追加 -->
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style_final.css" />
+  </head>
 <body>
   <header>
     <section class="ourhouse-banner">
@@ -98,9 +99,11 @@
         <p class="live-highlight outline-red">2024年末 <span class="highlight-blue">cero</span>とのツーマンイベント出演</p>
         <p class="live-highlight outline-pink">2025年3月22日 <span class="highlight-pink">沖縄Output</span>にてワンマンライブ開催（開業13周年）</p> -->
         <p class="live-highlight outline-yellow highlight-link">
-          <a href="https://www.southbankcentre.co.uk/whats-on/haruomi-hosono/" target="_blank" style="text-decoration: none; color: inherit;">
-            (最新)2025年7月19日 <span class="highlight-yellow">細野晴臣</span>（<span class="underlined">ESEA Encounters</span>）に参加決定！
-          </a>
+          <a href="https://www.southbankcentre.co.uk/whats-on/haruomi-hosono/"
+   class="highlight-link hover-sound"
+   target="_blank" style="text-decoration: none; color: inherit;">
+  (最新)2025年7月19日 <span class="highlight-yellow">細野晴臣</span>（<span class="underlined">ESEA Encounters</span>）に参加決定！
+</a>
         </p>
         
         
@@ -116,14 +119,14 @@
 
 <!-- 2023年の行 -->
 <li>
-  <a href="https://big-up.style/ZStwT98YZ0" target="_blank" class="highlight-link super-glow">
+  <a href="https://big-up.style/ZStwT98YZ0" target="_blank" class="highlight-link hover-sound">
     <strong>2023年：</strong> <span class="important">1stアルバム『tradition』</span> リリース
   </a>
 </li>
 
 <!-- 2024年の行 -->
 <li>
-  <a href="https://big-up.style/dxvZLPOS1p" target="_blank" class="highlight-link super-glow">
+  <a href="https://big-up.style/dxvZLPOS1p" target="_blank" class="highlight-link hover-sound">
     <strong>2024年：</strong> <span class="important">Correspondances</span> リリース（奄美大島の自然を電子音で!）
   </a>
 </li>
@@ -173,9 +176,16 @@
 </section>
 
 <!-- SNSリンク -->
+ 
 <section id="sns" class="section-box styled-section">
   <h2 class="section-title outline-pink">SNSリンク</h2>
   <ul class="styled-list">
+    <!-- Instagramリール埋め込み -->
+    <div class="reel-thumbnail-wrapper">
+      <a href="https://www.instagram.com/reel/ClVRwpBg7M0/?utm_source=ig_web_copy_link" target="_blank">
+        <img src="スクリーンショット 2025-05-06 19.21.23.png" alt="Instagramリールサムネイル" class="reel-thumbnail" />
+      </a>
+    </div>
     <li><a href="https://www.instagram.com/chocopa_co" target="_blank">Instagram</a></li>
     <li><a href="https://twitter.com/youdo80837332" target="_blank">Twitter (X)</a></li>
     <li><a href="https://www.youtube.com/@chocopacochocoquinquin7718" target="_blank">YouTubeチャンネル</a></li>
@@ -201,6 +211,20 @@
       iframe.src = '';
       modal.style.display = 'none';
     }
+  </script>
+  <audio id="hover-audio" preload="auto">
+    <source src="確定演出.wav" type="audio/wav">
+  </audio>
+  <script>
+    const hoverSound = document.getElementById('hover-audio');
+    const hoverLinks = document.querySelectorAll('.hover-sound');
+  
+    hoverLinks.forEach(link => {
+      link.addEventListener('mouseenter', () => {
+        hoverSound.currentTime = 0;
+        hoverSound.play();
+      });
+    });
   </script>
 </body>
 </html>

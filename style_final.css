@@ -392,28 +392,30 @@ footer {
 }
 
 .highlight-link:hover {
-  filter: brightness(2.5) saturate(1.5);
-  transform: scale(1.08) rotate(0.5deg);
-  background-color: rgba(255, 255, 100, 0.7);
-  box-shadow: 
-    0 0 10px #ffff33,
-    0 0 20px #ff00cc,
-    0 0 30px #ff00cc;
-  animation: pulse-glow 0.8s infinite alternate;
+  filter: brightness(3.2) saturate(1.7);
+  transform: scale(1.1) rotate(0.5deg);
+  background-color: rgba(255, 255, 200, 0.9);
+  color: #000;
+  box-shadow:
+    0 0 12px #ff00cc,
+    0 0 30px #ff33ff,
+    0 0 60px #ffff66,
+    0 0 80px #ffff33;
+  animation: pulse-glow-strong 0.6s infinite alternate;
 }
 
-@keyframes pulse-glow {
+@keyframes pulse-glow-strong {
   from {
     box-shadow:
-      0 0 10px #ffff33,
-      0 0 20px #ff00cc,
-      0 0 30px #ff00cc;
+      0 0 12px #ff00cc,
+      0 0 30px #ff33ff,
+      0 0 60px #ffff66;
   }
   to {
     box-shadow:
-      0 0 20px #ffff33,
-      0 0 40px #ff00cc,
-      0 0 60px #ff00cc;
+      0 0 24px #ff00cc,
+      0 0 60px #ff33ff,
+      0 0 90px #ffff66;
   }
 }
 
@@ -574,4 +576,82 @@ img, iframe {
   body {
     padding: 0 5%;
   }
+}
+
+
+.reel-thumbnail-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.reel-thumbnail {
+  max-width: 250px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.reel-thumbnail:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* SNSリンク全体を中央揃えに */
+.styled-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.8rem;
+  line-height: 2.2;
+  text-align: center;  /* ← 追加 */
+}
+
+/* SNSリンクの装飾 */
+.styled-list a {
+  color: #3333cc;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #ff66cc;
+  transition: all 0.3s ease;
+}
+
+ホバー時の強調効果を強化
+.styled-list a:hover {
+  filter: brightness(1.2) contrast(1.5);
+  color: #0000ff;
+  text-shadow: 1px 1px 3px #ff99cc;
+  transform: scale(1.05);
+}
+
+
+
+
+
+.hover-sound {
+  display: inline-block;
+  background-color: rgba(255, 255, 100, 0.2);
+  padding: 0.4rem 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 0 0px transparent;
+}
+
+.hover-sound:hover {
+  transform: scale(1.08);
+  background-color: rgba(255, 255, 150, 0.8);
+  box-shadow:
+    0 0 12px #ff33cc,
+    0 0 24px #ffff33,
+    0 0 36px #ff00cc;
+  color: #000;
+  text-decoration: underline;
 }
