@@ -659,11 +659,22 @@ img, iframe {
 
 
 
-.live-highlight {
-  text-align: center;
-}
+<style>
+  .live-highlight {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1em auto;
+    line-height: 1.6;
+    padding: 10px;
+    max-width: 90%;
+  }
 
-.live-highlight a {
-  display: inline-block;
-  text-align: center;
-}
+  .live-highlight a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+</style>
