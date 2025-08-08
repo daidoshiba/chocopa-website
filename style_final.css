@@ -659,20 +659,18 @@ img, iframe {
 
 
 
+/* ライブ情報中央寄せ修正 */
 .live-highlight {
-  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   margin: 1em auto;
-  line-height: 1.6;
   padding: 10px;
   max-width: 90%;
+  text-align: center;
 }
 
 .live-highlight a {
-  display: inline-block;
-  width: 100%;
+  display: inline;
   text-align: center;
 }
