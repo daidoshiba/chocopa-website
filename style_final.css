@@ -655,3 +655,15 @@ img, iframe {
   color: #000;
   text-decoration: underline;
 }
+
+
+
+
+.live-highlight {
+  text-align: center;
+}
+
+.live-highlight a {
+  display: inline-block;
+  text-align: center;
+}
