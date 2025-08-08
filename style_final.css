@@ -674,3 +674,145 @@ img, iframe {
   display: inline;
   text-align: center;
 }
+
+
+
+
+
+.goods-section {
+  text-align: center;
+  padding: 2em 1em;
+}
+
+.goods-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+  margin-top: 1.5em;
+}
+
+.goods-item {
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: black;
+}
+
+.goods-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.goods-item:hover img {
+  transform: scale(1.05);
+}
+
+.item-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 0, 0.9);
+  color: black;
+  font-weight: bold;
+  padding: 0.5em;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.goods-item:hover .item-label {
+  opacity: 1;
+}
+
+@media (max-width: 800px) {
+  .goods-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .goods-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
+
+/* グッズセクション下に余白 */
+.goods-section {
+  margin-bottom: 80px; /* 下にスペース追加 */
+}
+
+/* ホバー時に黒のオーバーレイをかける */
+.goods-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.goods-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+/* 商品名ラベル */
+.item-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* ←ここを黒の半透明に変更 */
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  padding: 10px;
+  line-height: 1.4;
+}
+
+/* ホバーで表示 */
+.goods-item:hover .item-label {
+  opacity: 1;
+}
+
+
+
+.goods-section {
+  margin-bottom: 200px; /* 下にスペースを空ける */
+}
+
+
+
+
+
+.section-title-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* sparkleエフェクト用 */
+.hover-sparkle {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.hover-sparkle:hover {
+  filter: brightness(1.5) drop-shadow(0 0 6px hotpink);
+  cursor: pointer;
+}
